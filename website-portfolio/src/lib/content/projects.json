@@ -2,13 +2,21 @@
   {
     "title": "RoboMaster",
     "slug": "robomaster",
-    "description": "DJI competition about robots that shoot each other. I developed the control code and the aimbot system.",
-    "link": ""
+    "description": "DJI competition about robots that shoot each other. I develop the control code and the aimbot system.",
+    "link": "",
+    "image": {
+      "src": "/robomaster-watercolor.png",
+      "alt": "Watercolor RoboMaster robot"
+    }
   },
   {
     "title": "Hound",
     "slug": "hound",
-    "description": "Takes big batches of construction photos, does defect detection, and displays them on a map quickly and cheaply using cool CV tech, producing a final report.",
-    "link": ""
+    "description": "Takes big batches of construction photos, hounds down defects, and locates them on a map quickly and cheaply using cool CV tech.",
+    "link": "https://tryhound.app/",
+    "image": {
+      "src": "/hound-shiba.webp",
+      "alt": "Hound Shiba mascot"
+    }
   }
 ]

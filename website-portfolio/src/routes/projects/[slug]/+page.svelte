@@ -60,7 +60,7 @@
 		</div>
 
 		{#if data.entries.length === 0}
-			<p class="text-sm text-muted-foreground italic">No devlog entries yet.</p>
+			<p class="text-sm text-muted-foreground italic">{data.slug === 'robomaster' ? "I'll dump all the good stuff after our competition next apr" : 'No devlog entries yet.'}</p>
 		{/if}
 	</section>
 </div>
