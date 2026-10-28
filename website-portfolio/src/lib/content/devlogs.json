@@ -1,13 +1,12 @@
 {
-  "calibur": [
+  "bridge-club": [],
+  "proper-golem": [],
+  "robomaster": [
     {
       "title": "Sunday PID Learning Plan",
       "date": "2026-07-05",
       "text": "**Readings**\n\n- *Real-Time C++* Ch 3 (An Easy Jump Start) — the safe subset of C++ for bare metal. Which features are zero-cost on a Cortex-M7, which ones to avoid.\n- *Real-Time C++* Ch 6 (Optimized C++ for Microcontrollers) — measuring runtime and code size down to the byte. \n- *Real-Time C++* Ch 12 (Floating-Point Math) — <code>fp32</code> precision, <code>isnan</code>, denormals, <code>fminf</code>/<code>fmaxf</code> behavior. \n- \"PID Without a PhD\" by Tim Wescott (free, ~10 pages) — sections on integral windup and derivative kick. Explains why derivative-on-measurement exists as a pattern.\n\n\n**Code archaeology**\nDeep dive into a reference PID implementation from other RoboMaster teams (scutrobotlabs, jiaodragon), stealing concepts like low-pass filters on error and derivative, dynamic dt from hardware timer, integral separation. \n\n**Mini-challenge — derivative-on-measure**\nImprovement to my toy pid simulator. Adding a feature where the target can move every few seconds to mimic how aimbot is constantly giving the robot new targets to aim at, can test many optimizations like derivative-on-measure",
       "id": "legacy-calibur-1"
     }
-  ],
-  "bridge-club": [],
-  "proper-golem": [],
-  "zeri": []
+  ]
 }

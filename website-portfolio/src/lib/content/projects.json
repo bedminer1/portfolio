@@ -1,28 +1,14 @@
 [
   {
-    "title": "Calibur Firmware",
-    "slug": "calibur",
-    "description": "From input commands to motor torques for the robots. Lots of fun control theory and latency optimizations to try to make a fast, reliable and easy to pilot robot. ",
+    "title": "RoboMaster",
+    "slug": "robomaster",
+    "description": "DJI competition about robots that shoot each other. I developed the control code and the aimbot system.",
     "link": ""
   },
   {
-    "title": "DataDog",
-    "slug": "datadog",
-    "description": "A Telegram assistant for construction inspections. It organises site photos, reviews evidence with computer vision, and turns checked evidence into draft reports.",
-    "link": "https://datadog.properrobotics.org",
-    "image": {
-      "src": "./datadog-shiba.webp",
-      "alt": "Watercolour DataDog Shiba mascot wearing a yellow construction helmet"
-    }
-  },
-  {
-    "title": "Zeri",
-    "slug": "zeri",
-    "description": "A local RoboMaster aimbot lab for recording tests and comparing tuning changes against repeatable benchmarks.",
-    "link": "",
-    "image": {
-      "src": "./zeri-portrait.webp",
-      "alt": "Watercolour Zeri mascot icon"
-    }
+    "title": "Hound",
+    "slug": "hound",
+    "description": "Takes big batches of construction photos, does defect detection, and displays them on a map quickly and cheaply using cool CV tech, producing a final report.",
+    "link": ""
   }
 ]
