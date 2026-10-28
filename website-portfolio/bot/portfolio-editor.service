@@ -1,0 +1,21 @@
+[Unit]
+Description=Portfolio Telegram content editor
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=portfolio-editor
+Group=portfolio-editor
+WorkingDirectory=/opt/portfolio-editor
+EnvironmentFile=/etc/portfolio-editor.env
+ExecStart=/opt/portfolio-editor/bot/target/release/portfolio-editor-bot
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+ProtectSystem=strict
+ReadWritePaths=/opt/portfolio-editor /var/www/portfolio /var/backups/portfolio
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

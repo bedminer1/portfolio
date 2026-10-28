@@ -24,3 +24,8 @@ deploy.sh
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Telegram editor runtime
+/bot/target/
+/static/uploads/
+/src/lib/content/*.tmp

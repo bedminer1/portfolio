@@ -1,14 +1,11 @@
 <script lang="ts">
-	import { Separator } from "$lib/components/ui/separator/index.js";
-	import { marked } from "marked";
+	import ContentBlocks from "$lib/components/content-blocks.svelte";
+	import { projects } from "$lib/projects";
 
 	let { data } = $props();
 
-	const titles: Record<string, string> = {
-		calibur: "Calibur Firmware",
-		"bridge-club": "Bridge Club",
-		"proper-golem": "Proper Golem",
-	};
+	let project = $derived(projects.find(project => project.slug === data.slug));
+	let title = $derived(project?.title ?? data.slug);
 
 	// Accordion state: keyed by entry index
 	let expanded: Record<number, boolean> = $state({});
@@ -17,47 +14,21 @@
 		expanded[idx] = !expanded[idx];
 	}
 
-	/**
-	 * Parse markdown text into styled HTML (same as updates.svelte).
-	 */
-	function parse(text: string): string {
-		let t = text
-			.replace(/\n\n/g, " @@BR@@\n")
-			.replace(/``` (?!\n)/g, "```\n");
 
-		let html = marked(t, { gfm: true, breaks: true }) as string;
-
-		html = html.replace(/(<pre>[\s\S]*?<\/pre>)|@@BR@@/g, (m, pre) =>
-			pre ? pre : "<br>");
-
-		const div = document.createElement('div');
-		div.innerHTML = html;
-
-		div.querySelectorAll('a').forEach(a => {
-			a.target = "_blank";
-			a.classList.add("underline", "text-ctp-red-light", "dark:text-ctp-red-dark");
-		});
-		div.querySelectorAll('ul').forEach(ul =>
-			ul.classList.add('list-disc', 'list-outside', 'mb-2', 'mt-1', 'ml-4'));
-		div.querySelectorAll('ol').forEach(ol =>
-			ol.classList.add('list-decimal', 'list-outside', 'mb-2', 'mt-1', 'ml-4'));
-
-		return div.innerHTML;
-	}
 </script>
 
 <svelte:head>
-	<title>{titles[data.slug] ?? data.slug} — robotsbybed</title>
+	<title>{title} — robotsbybed</title>
 </svelte:head>
 
-<div class="max-w-2xl mx-auto py-20 px-4">
-	<a href="/#projects" class="text-xs text-muted-foreground hover:text-foreground underline underline-offset-2 mb-8 inline-block">
-		← back to projects
+<div class="mx-auto min-h-screen max-w-2xl px-6 py-20 md:py-28">
+	<a href="/#my-stuff" class="mb-8 inline-block text-xs text-muted-foreground underline decoration-navy/40 underline-offset-4 hover:text-navy">
+		← back to my stuff
 	</a>
 
-	<h1 class="text-2xl text-foreground mb-2">{titles[data.slug] ?? data.slug}</h1>
+	<h1 class="text-2xl text-foreground mb-2">{title}</h1>
 
-	<Separator class="mb-12" />
+	<div class="mb-12 h-px bg-foreground/10"></div>
 
 	<section>
 		<h2 class="text-sm text-muted-foreground uppercase tracking-widest mb-6">Devlog</h2>
@@ -78,24 +49,10 @@
 					{#if expanded[i]}
 						<div class="mt-3 mb-8 text-sm leading-relaxed">
 							<div class="[&_code]:text-sm text-muted-foreground">
-								{@html parse(entry.text)}
+								<ContentBlocks blocks={entry.blocks} text={entry.text} image={entry.image} />
 							</div>
 
-							{#if entry.image}
-								<figure class="mt-4">
-									<img
-										src={entry.image.src}
-										alt={entry.image.alt}
-										class="rounded-md border border-border max-w-full"
-										loading="lazy"
-									/>
-									<figcaption class="text-xs text-muted-foreground mt-1 italic">
-										{entry.image.alt}
-									</figcaption>
-								</figure>
-							{/if}
-
-							<Separator class="mt-4 w-1/4" />
+							<div class="mt-4 h-px w-1/4 bg-foreground/10"></div>
 						</div>
 					{/if}
 				</div>

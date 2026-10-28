@@ -13,8 +13,12 @@ const config: Config = {
 				"2xl": "1400px"
 			}
 		},
-		extend: {
+			extend: {
 			colors: {
+				ink: "hsl(var(--foreground) / <alpha-value>)",
+				paper: "rgb(var(--canvas) / <alpha-value>)",
+				navy: "rgb(var(--navy) / <alpha-value>)",
+				"navy-soft": "rgb(var(--navy-soft) / <alpha-value>)",
 				border: "hsl(var(--border) / <alpha-value>)",
 				input: "hsl(var(--input) / <alpha-value>)",
 				ring: "hsl(var(--ring) / <alpha-value>)",
@@ -65,7 +69,9 @@ const config: Config = {
 				sm: "calc(var(--radius) - 4px)"
 			},
 			fontFamily: {
-				sans: [...fontFamily.sans]
+				sans: [...fontFamily.sans],
+				mono: ["JetBrains Mono", "ui-monospace", "monospace"],
+				hand: ["Reenie Beanie", "Comic Sans MS", "cursive"]
 			}
 		}
 	},

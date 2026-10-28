@@ -1,12 +1,9 @@
 import type { PageLoad } from "./$types";
 import { devlogs } from "$lib/devlogs";
+import { projects } from "$lib/projects";
 
 export function entries() {
-	return [
-		{ slug: "calibur" },
-		{ slug: "bridge-club" },
-		{ slug: "proper-golem" },
-	];
+	return projects.filter(project => !project.link).map(project => ({ slug: project.slug }));
 }
 
 export const load: PageLoad = ({ params }) => {

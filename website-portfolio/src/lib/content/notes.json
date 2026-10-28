@@ -1,0 +1,130 @@
+[
+  {
+    "title": "Joined Calibur Comp Team",
+    "date": "30 APR 2026",
+    "tags": "Robomaster,Archived",
+    "description": "",
+    "text": "To keep us more focused on winning, we split our (already not so big) team into 2 -> a main team and a competitive team.\n\n\t\tWe will have an internal competition to decide who gets to represent NUS at competitions and the competitive team will be kicked if we lose + there's a 1.5x damage multiplier advantage for the main team. Will be a fun challenge, especially with 10x less members.",
+    "id": "legacy-note-1"
+  },
+  {
+    "title": "Robomaster League Chongqing 2026",
+    "date": "3 APR 2026",
+    "tags": "Robomaster",
+    "description": "",
+    "text": "My first Robomaster competition, learnt a lot and we'll come back 10x stronger next year.\n\n\t\t**Takeaways**:\n        1. Automate Tests -> checking manually is slow and not comprehensive\n        2. FOCUS -> keep reflecting if the work you're doing is directly maximally increasing chances of winning\n\n        [小红书 post](http://xhslink.com/o/1W4KRiFrCtB)",
+    "id": "legacy-note-2"
+  },
+  {
+    "title": "Won a Robomaster comp for new members",
+    "date": "8 FEB 2026",
+    "tags": "Robomaster,Archived",
+    "description": "",
+    "text": "4 teams of 8-10 in a double elim bracket. Our robot suddenly wasn't moving the day before the competition and we took an early loss because the firmware bugged out. Clutched up in the end though 👍\n\n\t\tThis project taught me that robotics rewards curiosity, keep asking: \"how does that work?\", you have to understand a bit of everything, control theory, system programming, mechanical engineering, electrical engineering, machine learning etc",
+    "id": "legacy-note-3"
+  },
+  {
+    "title": "Sumobot Competition 2025",
+    "date": "15 OCT 2025",
+    "tags": "",
+    "description": "",
+    "text": "Participated in a competition where we built lego robots to push other robots out of a circular arena. Stomped the group stages but lost in the quarter finals because we pushed bad code at the last second (= instead of ===). We tested every test case except the one that failed.\n\n\t\tWow... don't push code last minute and if you do, test it comprehensively. Did a salty runback and we beat the winners so at least there's a bit of pride left that if we didn't push the bad code we might've won.\n\n\t\t[小红书 post](http://xhslink.com/o/7sNd9w3nMeZ)",
+    "id": "legacy-note-4"
+  },
+  {
+    "title": "Gym lockers and Functions",
+    "date": "12 AUG 2025",
+    "tags": "Archived, Math",
+    "description": "Injective — everyone has their own locker. Surjective — all lockers are used. Bijective — both injective and surjective.",
+    "text": "Imagine a gym with gym-goers and lockers. A spreadsheet contains information about who is assigned which locker. This can be thought of as a function, taking the name of the person as an input, then the locker they are assigned to as an output.\n\nFollowing the definitions of a 'function', we can also assume that all gym-goers are assigned a locker (the whole domain is covered), and that each person can only be assigned to exactly 1 locker (single output).\n\nAn **injective** assignment means no two gym-goers are assigned the same locker. Two people sharing a locker would be awkward for security and might cause space issues. You can simplify it by thinking of it as a strict each user to one unique locker mapping.\n\nA **surjective** assignment means every locker is used. Think of the the total number of lockers as the 'codomain' and the lockers being used as the 'range'. Surjectivity means the range equals the codomain — where all lockers are used.\n\nA **bijective** assignment is both injective and surjective — every gym-goer has their own locker, and every locker has exactly one gym-goer.\n\nFor a function to be **invertible**, it must be bijective. If we wanted to reverse the spreadsheet to look up a locker ID and get the gym-goer’s name, each locker would need to be assigned to exactly one person (original function being injective ensures one locker to many users mapping), and every locker would need to be in use (surjective ensures full coverage of inverse function's domain).",
+    "id": "legacy-note-5"
+  },
+  {
+    "title": "Delayed Dopamine",
+    "date": "30 JUN 2025",
+    "tags": "Archived, Productivity",
+    "description": "Schedule dopamine indulging activites in the evening, lock in during mornings and afternoons.",
+    "text": "After testing out the methods in [Delayed Gratification](/notes/Actually%20Stop%20Doomscrolling), I realized to actually get things done, it's less about the \"type\" of dopamine and more about the timing.\n\nA graph of the dopamine of an unproductive vs a productive person might look something like this\n\n<img src=\"/Scheduling_Dopamine.png\" alt=\"productive vs unproductive dopamine scheduling graph\" />\n\nWhen the unproductive person wakes up, first thing he does is scroll instagram — nice big hit of dopamine to start the day. Its 10am and he needs to start doing some work, but the dopamine withdrawal hits and he can't lock in. He watches netflix to get another hit — \"one episode and I'll start for real\". This cycle continues sisypheanly and it seems like the ability to focus is impossible.\n\nA more productive structure would be to refrain from large dopamine spikes in the morning-afternoon, moderating dopamine from food, entertainment, etc sources. Staying in that \"fasted\" state, go straight into getting work done, then indulge in the evenings once you're done with work for the day (NOT during breaks).\n\nIt's not about completely abstinence, that would be quite depressing. The key is the timing/sequence.",
+    "id": "legacy-note-6"
+  },
+  {
+    "title": "Actually Stop Doomscrolling",
+    "date": "14 MAY 2025",
+    "tags": "Archived, Productivity",
+    "description": "Let reward follow effort — not precede it",
+    "text": "\"Delayed gratification is better than instant gratification\" might sound like really obvious and superficial advice, but understanding the mechanisms of dopamine unlocked insights that further evolved into actionable advice.\n\nInstant gratification — doomscrolling social media, junk food, porn, binge-watching Netflix — causes sharp spikes and aggressive fall offs in dopamine. The steep crashes creates cycles of withdrawal and craving, leading to addictive behaviour. When the tiktok video becomes boring, we scroll to get another fresh, strong hit.\n\n**Delayed gratification** — exercise, creating, learning, or skill-building — dopamine rises slowly but sticks longer. Satisfaction from these activities don't short circuit the brain, but accumulates quietly and compounds (like a good investment).\n\nThe problem isn't dopamine itself — it's the source, isn't it? Make an environment where it becomes hard to fall into that loop, and promote good habits.\n\nPersonally, I deleted unproductive social media apps, turned my phone to gray-scale to reduce the dopamine, and take the time to pause and soak in the good dopamine, after a workout or completing a coding/writing tasks.\n\nLet reward follow work — not precede it.\n\nReference: [\"how to unf*ck your mind so that hard things become easy\"(video)]( https://www.youtube.com/watch?v=-qYann7hy0o )",
+    "id": "legacy-note-7"
+  },
+  {
+    "title": "Naval vs Recreational Diving",
+    "date": "19 APR 2025",
+    "tags": "Archived",
+    "description": "Reflections on relearning efficient air consumption after transitioning from military to recreational diving, with practical tips for doubling bottom time.",
+    "text": "170 bars of pressurized air consumed in 35minutes, while my buddy had 100 left. It was my first recreational dive ~1.5 years since I last dived in the Navy. But because of me, my buddy missed out on almost half the dive he paid for.\n\nPreviously, my habit was to get the jobs done ASAP, chugging through gas to give my body the oxygen needed to do power-strokes and blitz through tasks with my hands, usually having more than enough gas to complete the task.\n\nThat night I spent all my time in the hotel researching about how to increase my bottom time, with a bit of my competitive nature flaring up, hoping to outlast my buddy on one of the dives.\n\nIn the end, I doubled my bottom time, achieving 60 minutes with 140 bars spent (better bottom times are coming soon) + outlasting that buddy. Some of the most useful tips/queues:\n\n1. Breathe slower —Try with counts of 4 in and out first, then push it to 6, then 8. Generally, it's easier to slow down the exhale than the inhale, so do that.\n2. Minimize hand movement — unlike surface swimming, fins can do all the work with proper technique. Using your hands is inefficient and makes you burn gas too quickly.\n3. Stay calm — sometimes when I felt stress underwater like having problems equalizing the pressure, I would just close my eyes, tune everything out and think to myself \"I am so calm right now\", and it works.\n4. Be a 50kg woman — women have smaller lungs so its easier to regulate. Also, the lighter you are, the easier it is move around in the water + you have less oxygen-craving cells. ",
+    "id": "legacy-note-8"
+  },
+  {
+    "title": "Wildrift Grinding Manual",
+    "date": "2 APR 2025",
+    "tags": "Archived",
+    "description": "Lessons from chasing Grandmaster rank in Wildrift: building a grind mindset and transferring competitive analysis skills to other goals.",
+    "text": "\"Ability to hit high ranks in video games is a good indicator of success in the future\".\n\nIt's tempting to dismiss it as trying to rationalize a frivolous use of time. Yet, it really is true that the way I approached getting better at the game is quite transferable to other goals. I would watch high rank gameplay of the characters I want to get better at, always with the prompt \"Why would they do this?\", \"Why did this turn out well?\" to guide my analysis and learn their reasoning and game sense.\n\nThe capacity for sustained, focused effort — 'grinding' — is another component of mastery, learning that there is no way around the fact that time is exchanged for mastery and results.\n\nBeing competitive about video games has been an exercise in developing a robust self-improvement framework, to iteratively minimize mistakes and imitate good strategies. And it has influenced my approach to other interests too: basketball, running, programming etc. ",
+    "id": "legacy-note-9"
+  },
+  {
+    "title": "Tech Collabing Manual",
+    "date": "1 APR 2025",
+    "tags": "Archived",
+    "description": "Personal lessons from moving from solo coding to team coding — how to map architecture early, play to strengths, and sync knowledge.",
+    "text": "In 2024, I did most of my coding projects alone. In 2025, I made a resolution to be less antisocial (lol).  And so since January, I've participated for 3 hackathons and contributed to 2 start-ups, working in teams of  ~3-10 developers.\n\nBeing real, there were times I thought \"It'd be easier if I just locked in and wrote it all myself\". I realize that's insanely self-conceited, but maybe it's true. However, thinking that way would be entirely missing the point of the exercise — to learn to work in teams and get everyone to contribute to the best of their abilities.\n\nSome takeaways:\n- Map out the architecture first — define data flow diagrams and API specifications early on to minimize dev disruptions.\n- Play to people's strengths  — don't force a bad fit.\n- Schedule meetings — code review is not just for bug spotting, but also knowledge sharing to keep everyone on the same page. Also serves as 'deadlines' to keep dev on track.\n\n\nOverall, I'd say that experience has been great, I've learnt a lot from experienced devs and also spent meaningful time teaching and sharing my passion for tech to teammates less experienced. ",
+    "id": "legacy-note-10"
+  },
+  {
+    "title": "Just Not Feeling It",
+    "date": "31 MAR 2025",
+    "tags": "Archived",
+    "description": "How self-consciousness after sharing my work publicly stalled my writing, and why perfectionism is the real enemy of consistency.",
+    "text": "It's Day 4 of my \"Write a Note Everyday\" Challenge, but I'm still on note number 3.\n\nI noticed that after sharing links to my portfolio website, I became much more self aware of the content I put out, becoming a perfectionist when writing new notes (in a bad way).\n\nI had many ideas on what to write about but shot them all down, constipation caused by thoughts of \"This isn't interesting enough\", \"My opinion on this wouldn't matter\", etc.\n\nPerfectionism is counter-productive; 'bad writing' can be good learning opportunities. Anyway, the primary goal of this exercise isn't even to get myself to write super well either — it's suppose to be an outlet for self-expression, and it's unrealistic to be 100% creative/inspired all the time.\n\nDrive to get better at writing (eg. asking LLMs to give me tips on writing and implementing those tips) is only helpful/productive so long as it stays fun and doesn't become a burden.\n\nSo a small note to self: \"Don't worry too much and just get into the writing. Take it easy, stay true to yourself and just write about what's on your mind.\"",
+    "id": "legacy-note-11"
+  },
+  {
+    "title": "Building for Ghosts",
+    "date": "29 MAR 2025",
+    "tags": "Archived",
+    "description": "A pitch mistake: focusing on flashy tech without user validation — and how real product credibility comes from user voices, not feature lists.",
+    "text": "The room was thick with anticipation. Moments earlier, we'd laid out our vision: PathHero, an app to transform firefighting with interactive digital maps and AI-driven rescue routes. Now, the investors' questions hung in the air, each one a potential landmine. 'Have you spoken to the firefighters?' one asked, his brow furrowed. 'Would they _actually_ use this?'\n\nIt was a good learning opportunity. We had focused too much on the 'what' — the cool tech, the innovative features, neglecting the 'who' — feedback from firefighters that would actually use the app.\n\nI walked away from that pitch with a few questions I could use to guide future idea validation (and surprisingly, the 10k grant lol) —\"Would firefighters actually want to use a program like this?\" and \"How would the target audience of the product want to improve this product for their own use?\".\n\nI also realized that the compelling slide on a pitch deck wouldn't be a feature list, but a collection of users' voices — quotes, authentic feedback, and validation that they would actually want to use the app.\n",
+    "id": "legacy-note-12"
+  },
+  {
+    "title": "Writing Everyday",
+    "date": "28 MAR 2025",
+    "tags": "Archived",
+    "description": "A public commitment to daily writing as a habit-building tool for expression, even when inspiration runs dry.",
+    "text": "Inspired by \"Day XX of practicing public speaking on Tiktok\" videos, I've realized how developing a habit of expression your reflections and thoughts daily can be a good way of consolidating your learning and building a brand, showing others the type of person you are.\n\nSo this note is a way of making my commitment to writing daily blogs public. I want to write about a range of topics, things I've read about, things I've learnt from personal experience, rants, and celebrations.\n\nInstead of writing only when \"inspiration strikes\", it's better to form the habit of writing everyday. Even though at the beginning it might feel like I have nothing to say, over time my ability to share and express my own opinions will become more refined, by then hopefully my daily writing won't too bad. ",
+    "id": "legacy-note-13"
+  },
+  {
+    "title": "Why Be a Knowledge Broker?",
+    "date": "5 MAR 2025",
+    "tags": "Archived",
+    "description": "Inspired by Never Eat Alone, a reminder that documenting insights isn't enough — real value comes from connecting and sharing them.",
+    "text": "**Knowledge Brokers**\nIn _Never Eat Alone_, the author introduces the concept of _knowledge brokers_—people who curate, connect, and distribute valuable insights. He describes it as a relationship-building system: you start with one friend and one problem, but over time, you become a hub of interconnected people and solutions.\n\n**An Example**\nThe author shares a story about a duffle bag entrepreneur struggling with marketing. A mutual connection introduces him to a Reebok executive, who provides insights into branding and distribution. In return, the entrepreneur shares his knowledge of manufacturing and design, helping the executive refine Reebok’s bag line. Both walk away with valuable takeaways, and the mutual contact strengthens their network by facilitating the exchange.\n\n**My Attempt**\nThis website is my own attempt at being a knowledge broker—a library of ideas, a space to document my thoughts, projects, and lessons learned. However, I think one pitfall I have personally fallen into is that I spend too much time \"tending to the garden\" and not enough inviting others to come enjoy it too. It is a personal resolution to become more proactive in reaching out and engaging new connections.",
+    "id": "legacy-note-14"
+  },
+  {
+    "title": "Identity-Based Motivation",
+    "date": "5 MAR 2025",
+    "tags": "",
+    "description": "distilled atomic habits",
+    "text": "**Identity-based Motivation**\nChange in behaviour driven by changes in identity rather than outcome. When the cookie is tempting you, its easier to reason that you're not the type of person to eat cookies than to say \"I want this badly but need to resist\".  Every action is a vote for the identity you want to reinforce.\n\n**Habit Engineering**\nMake good habits:\n - **Obvious** - Place cues in visible spots.\n- **Attractive** - Associate the habit with something enjoyable.\n- **Easy** - Lower the effort barrier by starting small.\n- **Satisfying** - Create a sense of progress with rewards or tracking.\n",
+    "id": "legacy-note-15"
+  },
+  {
+    "title": "Leetcode Interviewer Manual",
+    "date": "17 MAR 2025",
+    "tags": "Archived",
+    "description": "Focus on problem-solving approach, testing edge cases, and evaluating problem breakdown instead of just the final solution.",
+    "text": "A close friend recently offered to be a mock interviewer for leetcode interview practice even though she doesn't have much experience with leetcode (yet). This guide was written for her to learn about the basics of leetcode, with tips for being a good interviewer.\n\n**The Problem**\nThe interviewer presents a programming problem, designed to test your ability to understand and define inputs, outputs, and constraints, design and implement step-by-step plans (algorithms) to solve the problem, and analyze the solution for it's efficiency.\n\nFor example, a simple problem might be *\"Given an array of integers, return the sum of all elements.\"* You then need to write code(usually a function) that takes in any array of numbers, computes and returns the sum total.\n\n**Test Cases**\nThey are a set of pre-computed inputs and outputs used to test if a solution is correct. For example, a test case for the previous question might be:\n- Input: `[1, 2, 3, 4, 5]`\n\n- Output: `15`\n\n\nThere are usually many test cases for one problem, maybe with edge cases with inputs at the boundaries of a problem's constraints (e.g empty arrays, negative numbers, large number on inputs).\n\n*Interviewer Tip:* When observing me, listen for how thoroughly I consider the test cases. Do I take the time to think about edge cases? Do I miss edge cases?\n\n**Analyzing the Solution**\nTime complexity is a way to measure how the runtime of an algorithm scales with the size of the input. We use Big O notation to express this.\n\n- O(1): Constant time (the runtime doesn't depend on the input size).\n\n- O(n): Linear time (the runtime grows linearly with the input size).\n\n- O(n^2): Quadratic time (the runtime grows quadratically with the input size).\n\n- O(log n): Logarithmic time (the runtime grows logarithmically with the input size).\n\n\nFor example, the sum problem has a time complexity of O(n) because we need to iterate through each element in the array once.\n\n*Interviewer Tip:* Do I explain why my solution has a particular time complexity? Do I consider alternative solutions with better time complexities? If I am not considering time complexity or explaining it well, let me know.\n\n**Common Topics**\nLeetCode problems often fall into these categories:\n\n- Arrays and Strings: Manipulating sequences of data.\n\n- Linked Lists: Working with data structures that are linked together.\n\n- Trees and Graphs: Representing hierarchical and interconnected data.\n\n- Dynamic Programming: Breaking down problems into smaller, overlapping subproblems.\n\n- Sorting and Searching: Efficiently organizing and finding data.\n\n- Hash Tables: Storing and retrieving data using key-value pairs.\n\n- Recursion: Solving problems by breaking them down into smaller instances of the same problem.\n\n\n*Interviewer Tip:* When you are listening to me, if I mention these topics, you can ask a question about the topic. For example, if I mention a Hash Table, you can ask \"What is a Hash table?\" This will allow me to practice explaining the concepts.\n\n**Interviewer Checklist**\nClarity:\n- Did I clearly explain _what_ I'm trying to do and _why_?\n\n- Did I break down the problem into smaller, manageable steps?\n\n- Did I ask enough clarifying questions to get all the details required for a proper solution?\n\n\nCode Efficiency\n- Did I discuss the time complexity?\n\n- Did I discuss the space complexity\n\n\nCode Quality\n- Is the code readable? with meaning variable names and comments.\n\n- Did I test my code with the test cases that were created?\n\n- Is the code correct? How did I handle bugs?",
+    "id": "legacy-note-16"
+  }
+]
